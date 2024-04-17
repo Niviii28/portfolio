@@ -1,0 +1,598 @@
+/*---------------------------------------------------imported font-----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------global css------------------------------------------------------------------*/
+body {
+	margin: 0 5%;
+	color: #DACFEA;
+	background: linear-gradient(180deg, #000 0%, #241337 21.86%, #5A3966 50.51%, #987184 82.01%, #9B7B7E 90.97%, #51444D 100%) no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: default;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.line {
+	width: 90%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------nav bar------------------------------------------------------------------*/
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 5vh;
+	margin-left: 2%;
+	gap: 10vw;
+	position: relative;
+}
+
+#logo {
+	transition: transform 0.5s;
+}
+
+#logo:hover {
+	transform: scale(1.5);
+}
+
+#link {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 5vw;
+}
+
+#links {
+	text-decoration: none;
+	color: #DACFEA;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: "Raleway", sans-serif;
+	transition: transform 0.5s;
+}
+
+#links:hover {
+	transform: scale(1.1) translateY(-5px);
+
+}
+
+/*------------------------------------------------------about me--------------------------------------------------------------*/
+
+#about {
+	display: flex;
+	flex-direction: row;
+	height: 82vh;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+#about-left-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#about-top-left-img {
+	height: 80%;
+	width: 65%;
+	background: url(images/about\ pic.jpeg);
+	background-size: cover;
+	margin-left: 2rem;
+	border-radius: 1.5625rem;
+}
+
+#about-bottom-left-link {
+	width: 65%;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+#about-bottom-left-link p {
+	font-family: "Montserrat Alternates";
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 0;
+}
+
+#about-bottom-left-link p a {
+	text-decoration: none;
+	color: #DACFEA;
+}
+
+#about-bottom-left-link p i {
+	margin-right: 1rem;
+	font-size: 1.5rem;
+	transition: transform 0.5s;
+}
+
+#about-bottom-left-link p i:hover {
+	transform: translateY(-5px);
+}
+
+#about-right-box {
+	display: flex;
+	flex-direction: column;
+}
+
+#info p {
+	margin: 0;
+}
+
+#usere {
+	font-family: "Montserrat Alternates";
+	font-size: 1.875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+#head1 {
+	font-family: Raleway;
+	font-size: 3.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	background: linear-gradient(180deg, #BA8ECA -40.13%, #C7989C 101.19%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#box1 {
+	display: flex;
+	flex-direction: row;
+	margin-top: -1rem;
+	gap: 1rem;
+}
+
+#box1span {
+	font-family: Magra;
+	font-size: 6.25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	background: linear-gradient(180deg, #BA8ECA -40.13%, #C7989C 101.19%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: -1rem;
+}
+
+#box1p {
+	background: linear-gradient(180deg, #BA8ECA -40.13%, #C7989C 101.19%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Raleway;
+	font-size: 3.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-top: 0.2em;
+}
+
+#para {
+	font-family: "Montserrat Alternates";
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-top: 1.5rem;
+}
+
+#spotify {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+/*-----------------------------------------------education---------------------------------------------------------------------*/
+
+#education {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 2% 4%;
+	justify-content: space-around;
+}
+
+#eaducation-head {
+	font-family: "Montserrat Alternates";
+	font-size: 3.125rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-top: 1rem;
+}
+
+#education-box {
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+	margin-left: 5rem;
+}
+
+#edu-left-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.year {
+	font-family: Raleway;
+	font-size: 2.1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 6.81rem;
+}
+
+#edu-mid-box {
+	display: flex;
+	flex-direction: column;
+	margin-top: .49rem;
+}
+
+#edu-right-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	margin-bottom: 5.3rem;
+}
+
+.name-head {
+	font-size: 1.875rem;
+	font-weight: 400;
+}
+
+.name-subHead {
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin-left: 1.3rem;
+	margin-top: .5rem;
+}
+
+
+/*-----------------------------------------------------------skills-hobbies---------------------------------------------------------*/
+
+
+#skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	margin: 2% 4%;
+}
+
+#top-skill-box {
+	display: flex;
+	flex-direction: column;
+	gap: 3.25rem;
+	margin-top: 1rem;
+}
+
+#skill-head {
+	font-family: "Montserrat Alternates";
+	font-size: 3.125rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+#skill-soft-pic {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5.5rem;
+}
+
+#skill-soft-pic img {
+	transition: transform 0.5s;
+}
+
+#skill-soft-pic img:hover {
+	transform: scale(1.1);
+}
+
+#bottom-skill-box {
+	display: flex;
+	flex-direction: row;
+}
+
+.lang-hobbies {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.lang-hob-head {
+	font-family: "Montserrat Alternates";
+	font-size: 3.125rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+#lang-list {
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+	align-items: center;
+	margin-left: 4rem;
+}
+
+.langs {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2.87rem;
+	align-items: center;
+	width: 100%;
+}
+
+.lang-name {
+	font-family: Raleway;
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.progress-line {
+	width: 13rem;
+	height: 1.5rem;
+	background-color: #B09FCA;
+	margin-left: 4rem;
+	border-radius: 1rem;
+}
+
+.prog-line {
+	height: 1.5rem;
+	background-color: #1A0E27;
+	border-radius: 1rem;
+}
+
+#hob-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.hob {
+	font-family: Raleway;
+	font-size: 1.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 1rem;
+}
+
+
+
+/*-------------------------------------------------contact-------------------------------------------------------------------*/
+
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	margin: 2% 4%;
+	height: 100vh;
+	justify-content: space-around;
+}
+
+#contact-top-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+#contact-top-box h1 {
+	font-family: "Montserrat Alternates";
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+}
+
+#contact-top-box p {
+	font-family: "Raleway";
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 1%;
+}
+
+#contact-mid-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 8%;
+}
+
+#contact-mid-box h1 {
+	font-family: "Raleway";
+	font-size: 40px;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	margin-bottom: 15%;
+	justify-content: space-around;
+}
+
+#Site-link {
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#contact-links {
+	margin-top: 16%;
+}
+
+#contact-links p {
+	display: flex;
+	flex-direction: row;
+	gap: 19px;
+	font-family: "Montserrat Alternates";
+
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 40%;
+	cursor: pointer;
+	transition: transform 0.5s, font-size 0.5s;
+}
+
+#contact-links p a {
+	text-decoration: none;
+	color: #DACFEA;
+	font-size: 16px;
+}
+
+#contact-links p:hover {
+	transform: scale(1.2);
+	font-size: 17px;
+}
+
+#details {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#details h1 {
+	margin-bottom: 10%;
+}
+
+#contact-detail {
+	margin-top: 10%;
+}
+
+#contact-detail p {
+	display: flex;
+	flex-direction: row;
+	font-family: "Montserrat Alternates";
+	align-items: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	gap: 40px;
+	margin-bottom: 15%;
+}
+
+#contact-detail p img {
+	transition: transform 0.5s;
+}
+
+#contact-detail p img:hover {
+	transform: translateY(-5px);
+}
+
+#contact-detail p a {
+	text-decoration: none;
+	color: #DACFEA;
+}
+
+#detail-para-special img {
+	margin-right: 7.5px;
+}
+
+#newsletter {
+	width: 27vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#newsletter h1 {
+	margin-bottom: 9%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 85%;
+}
+
+form input,
+form textarea {
+	width: 100%;
+	height: 2vh;
+	background: none;
+	border-radius: 10px;
+	border: 1px solid #DACFEA;
+	padding: 15px;
+	margin: 14px 0;
+	color: #DACFEA;
+	font-size: 15px;
+	box-shadow: 5px 2px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+	color: #DACFEA;
+	font-family: "Montserrat Alternates";
+}
+
+form textarea {
+	height: 11vh;
+}
+
+.line-btw-2 {
+	margin-top: 14vh;
+	height: 72%;
+}
+
+#contact-bottom-box {
+	margin-top: 1%;
+	display: flex;
+	align-items: center;
+}
+
+#contact-bottom-box a {
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color: #DACFEA;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+#contact-bottom-box a:hover {
+	transform: translateY(-5px);
+}
+
+#footer {
+	text-align: center;
+	font-family: "Montserrat Alternates";
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%;
+	margin-top: 3%;
+}
